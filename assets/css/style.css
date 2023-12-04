@@ -656,16 +656,64 @@ body {
 \*-----------------------------------*/
 
 
+.feature-banner {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius-extra-large);
+}
 
+.feature-content { padding: 24px 16px 0}
 
+.feature-content .feature-text { margin-block: 16px;}
+
+.feature-test .feature-item { color: var(--neutral-30); }
+
+.feature-list {
+  display: grid;
+  gap: 12px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  color: var(--primary-100);
+  font-size: 2.2rem;
+}
 
 /*-----------------------------------*\
   #VIDEO
 \*-----------------------------------*/
 
 
+.video-card {
+  height: 260px;
+  border-radius: 32px;
+  background: linear-gradient(-deg, black, black), url('../images/video-card.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
 
+.play-btn {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  background-color: var(--neutral-100);
+  color: var(--primary-100);
+  border-radius: var(--radius-circle);
+  animation: pulse 1.5s var(--transition-easing-quick) forwards infinite;
+}
 
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 gray}
+  100% { box-shadow: 0 0 0 20px black; }
+}
 
 /*-----------------------------------*\
   #STORY
